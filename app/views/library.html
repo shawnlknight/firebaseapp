@@ -1,0 +1,37 @@
+<div class="header">
+  <ul class="nav nav-pills pull-left">
+    <li><a ng-href="#">Home</a></li>
+    <li class="active"><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/map">Box Locator</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
+  </ul>
+</div>
+<div class="jumbotron">
+	<div class="wodLibrary">
+		<h2>Enter new WOD below</h2>       
+	    <div class="newWod">
+	        <form class="newWodForm">
+	            <!--New WOD form-->
+	            <input type="text" class="form-control" id="newWodTitle" placeholder="Title of workout">
+	            
+	            <textarea class="form-control" id="wodContent" placeholder="Workout description" rows="10"></textarea>
+	            <button type="button" class="btn btn-default btn-sm" id="submitButton">Submit Workout</button>
+	        </form>
+		</div>      
+	</div>
+</div>
+
+<div class="row marketing">
+    <div class="col-lg-6">
+
+        <section class="wodList">
+            <!--List of WODS here-->
+        </section>
+
+    </div>
+</div>
+
+<div class="footer">
+    <p class="inc"><span></span> Random WOD, Inc.</p>
+</div>
