@@ -12,4 +12,8 @@ angular.module('firebaseappApp')
       });
     };
 
+    $scope.logout = function() {
+      simpleLogin.logout();
+    };
+
   });

@@ -1,0 +1,26 @@
+<div class="header">
+  <ul class="nav nav-pills pull-left">
+    <li><a ng-href="#">Home</a></li>
+    <li><a ng-href="#/library">WOD Library</a></li>
+    <li><a ng-href="#/map">Box Locator</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
+  </ul>
+</div>
+<div class="jumbotron">
+    <div>
+        <h2>Add New WOD</h2> 
+        <form class="form-inline" role="form" novalidate ng-submit="addWod()">
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="newWod.title" placeholder="title">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" ng-model="newWod.content">
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Add WOD</button>
+        </form>            
+    </div>
+</div>
+
+    

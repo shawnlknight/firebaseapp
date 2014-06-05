@@ -13,7 +13,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     padding: 0.2em 0;
 }
 nav {
-    background-color: #000;
+    background-color: #242224;
 }
 .nav li a {
     color: #d6d6d6;
@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-pills {
-    background-color: #000;
+    background-color: #242224;
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -41,7 +41,6 @@ nav {
 /* Space out content a bit */
 body {
     padding-top: 0;
-    padding-bottom: 20px;
     // background: #ddd;
     background: url();
     background-repeat: no-repeat;
@@ -79,18 +78,16 @@ body {
 
 /* Custom page footer */
 .footer {
-    background: #000;
+    background: #242224;
     width: 100%;
     min-height: 50px;
-    left: 0;
-    right: 0; 
-    bottom: 0; 
-}
-
-.inc {
-    padding-top: 1%;
-    text-align: center;
-    color: #d6d6d6;
+    p {
+        padding: 2%;
+        margin:0;
+        text-align: center;
+        color: #12ad04;
+        font-size: 18px;
+    }
 }
 
 .container-narrow > hr {
@@ -112,7 +109,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     color: #fff;
-    background-color: #000;
+    background-color: #242224;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
     min-height: 250px;
@@ -178,7 +175,6 @@ body {
 }
 
 .wodLibrary {
-    padding-top: 3%;
     h2 {
         color: #12ad04;
     }
@@ -235,3 +231,19 @@ textarea.form-control {
 .lead {
     color: #d6d6d6;
 }
+
+.mapHeader {
+    color: #12ad04;
+}
+
+.flex-container {
+display: -webkit-flex;
+-webkit-flex-direction: row;
+-webkit-justify-content: space-between;
+-webkit-flex-wrap: wrap;
+}
+
+
+
+
+

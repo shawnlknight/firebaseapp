@@ -16,6 +16,7 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    
   </head>
   <body ng-app="firebaseappApp">
     <!--[if lt IE 7]>
@@ -44,6 +45,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
@@ -71,9 +73,11 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/wodCtrl.js"></script>
     <script src="scripts/angularfire/config.js"></script>
     <script src="scripts/services/firebase.js"></script>
     <script src="scripts/services/login.js"></script>
+    <script src="scripts/services/wodService.js"></script>
     <script src="scripts/angularfire/simpleLoginTools.js"></script>
     <script src="scripts/angularfire/routesecurity.js"></script>
     <script src="scripts/controllers/login.js"></script>

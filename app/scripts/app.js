@@ -20,7 +20,11 @@ angular
       .when('/library', {
         authRequired: true,
         templateUrl: 'views/library.html',
-        controller: 'MainCtrl'
+        controller: 'WodCtrl'
+      })
+      .when('/newWod', {
+        templateUrl: 'views/newWod.html',
+        controller: 'WodCtrl'
       })
       .when('/map', {
         templateUrl: 'views/map.html',
