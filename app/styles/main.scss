@@ -15,6 +15,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 nav {
     background-color: #242224;
 }
+
 .nav li a {
     color: #d6d6d6;
     border-radius: 0;
@@ -26,7 +27,6 @@ nav {
 
 .nav-pills {
     background-color: #242224;
-    margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 18px;
@@ -41,7 +41,6 @@ nav {
 /* Space out content a bit */
 body {
     padding-top: 0;
-    // background: #ddd;
     background: url();
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,13 +56,12 @@ body {
 
 /* Custom page header */
 .header {
+    max-height: 15px;
     margin-top: 0;
     padding-bottom: 0;
-    // background: #000;
-    opacity: 0.8;
-    // height: 40px;
+    opacity: 0.9;
     top: 0;
-    // width: 100%;
+    width: 100%;
     position: fixed;
     z-index: 1;
 
@@ -95,8 +93,6 @@ body {
 }
 
 .container {
-    // background: #000;
-    // padding-top: 30px;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -114,7 +110,7 @@ body {
     border-bottom: 1px solid #e5e5e5;
     min-height: 250px;
     .btn {
-        font-size: 30px;
+        font-size: 20px;
         padding: 14px 14px;
         background-color: #d6d6d6;
     }
@@ -127,8 +123,7 @@ body {
 .marketing {
     background-color: #fff;
     margin: 40px 0;
-    min-height: 700px;
-    opacity: 0.87;
+    min-height: 600px;
     p + h4 {
         margin-top: 28px;
     }
@@ -159,9 +154,15 @@ body {
     }
 }
 
+.myBox {
+    color: #12ad04;
+    padding-right: 100px;
+    margin-left: 50px;
+}
+
 .titleName {
     color: #12ad04;
-    padding-top: 0;
+    padding-top: 3%;
     padding-bottom: 10px;
 }
 
@@ -172,12 +173,6 @@ body {
 
 .newWod {
     max-width: 400px;
-}
-
-.wodLibrary {
-    h2 {
-        color: #12ad04;
-    }
 }
 
 .wodList {
@@ -232,8 +227,20 @@ textarea.form-control {
     color: #d6d6d6;
 }
 
-.mapHeader {
-    color: #12ad04;
+#newWodForm {
+    padding-left: 24%;
+    .btn:hover {
+        background-color: #12ad04;
+    }
+}
+
+#wodTextArea {
+    width: 400px;
+}
+
+.angular-google-map-container { 
+    height: 400px; 
+    width: 800px;
 }
 
 .flex-container {
@@ -242,6 +249,9 @@ display: -webkit-flex;
 -webkit-justify-content: space-between;
 -webkit-flex-wrap: wrap;
 }
+
+
+
 
 
 

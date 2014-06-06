@@ -9,13 +9,14 @@ angular
     'firebase',
     'angularfire.firebase',
     'angularfire.login',
-    'simpleLoginTools'
+    'simpleLoginTools',
+    'google-maps'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'WodCtrl'
       })
       .when('/library', {
         authRequired: true,
@@ -24,6 +25,10 @@ angular
       })
       .when('/newWod', {
         templateUrl: 'views/newWod.html',
+        controller: 'WodCtrl'
+      })
+      .when('/updateWod', {
+        templateUrl: 'views/updateWod.html',
         controller: 'WodCtrl'
       })
       .when('/map', {

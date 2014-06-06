@@ -12,5 +12,14 @@ angular.module('firebaseappApp')
     $scope.removeWod = function(wodId) {
     	WodService.removeWod(wodId);
     };
+
+    $scope.updateWod = function(wod) {
+        WodService.updateWod(wod);
+        $location.path('/updateWod');
+    };
+
+    $scope.randomWod = function(wodId) {
+        WodService.randomWod(wodId);
+    };
   
   }]);

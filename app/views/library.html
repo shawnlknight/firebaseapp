@@ -1,5 +1,6 @@
 <div class="header">
-  <ul class="nav nav-pills pull-left">
+  <ul class="nav nav-pills">
+    <li><h1 class="myBox">My Box</h1></li>
     <li><a ng-href="#">Home</a></li>
     <li class="active"><a ng-href="#/library">WOD Library</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
@@ -9,9 +10,7 @@
 </div>
 
 <div class="jumbotron">
-	<div class="wodLibrary">
-		<h2>WOD Library</h2>             
-	</div>
+	<h2 class="titleName">WOD Library</h2>             
 </div>
 
 <div class="newWod">
@@ -23,7 +22,7 @@
         <article ng-repeat="(index, wod) in wods">
           <h4>{{wod.title}}</h4>
           <p>{{wod.content}}</p>
-          <p class="small"><a href="" ng-click="removeWod(index)">Remove</a></p>  
+          <p class="small"><a href="#/updateWod">Update</a> | <a href="" ng-click="removeWod(index)">Remove</a></p>  
         </article>
     </div>
 </div>

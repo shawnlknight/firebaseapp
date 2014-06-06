@@ -12,8 +12,19 @@ angular.module('firebaseappApp')
 			var newWod = function(wod) {
 				wodItems.$add(wod);
 			};
+
 			var removeWod = function(id) {
 				wodItems.$remove(id);
+			};
+
+			var updateWod = function(wod) {
+				ref.update(wod);
+			};
+
+			var randomWod = function(id) {
+				$("#randomButton").on("click", wodItems);
+				var randomizer = _.random(0, wod.length);
+				var workout = wod[randomizer];
 			};
 
 			return {

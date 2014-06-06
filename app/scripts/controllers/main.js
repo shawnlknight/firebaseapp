@@ -2,11 +2,26 @@
 
 angular.module('firebaseappApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.map = {
+	    center: {
+	        latitude: 32.796518,
+	        longitude: -79.944385
+	    },
+	    zoom: 10,
+	};
+	$scope.myMarkers = [
+		{
+			"latitude": 32.796518,
+			"longitude": -79.944385
+		}
+	];
+	$scope.markers = $scope.myMarkers;
   });
+
+
+
+
+
+
 
 
