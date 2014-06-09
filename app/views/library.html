@@ -1,6 +1,6 @@
 <div class="header">
   <ul class="nav nav-pills">
-    <li><h1 class="myBox">My Box</h1></li>
+    <h1 class="myBox">My Box</h1>
     <li><a ng-href="#">Home</a></li>
     <li class="active"><a ng-href="#/library">WOD Library</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
@@ -10,12 +10,24 @@
 </div>
 
 <div class="jumbotron">
-	<h2 class="titleName">WOD Library</h2>             
+  <div class="pageTitle">
+	 <h2 class="titleName">WOD Library</h2> 
+  </div>            
 </div>
 
 <div class="newWod">
     <a class="btn btn-default btn-lg" id="submitButton" ng-href="#/newWod">Create WOD</a>
 </div>
+
+<!-- <div class="row marketing">
+    <div class="col-lg-6">
+        <article ng-repeat="(index, item) in items">
+          <h4>{{item.title}}</h4>
+          <p>{{item.content}}</p>
+          <p class="small"><a href="#/updateWod">Update</a> | <a href="" ng-click="removeWod(index)">Remove</a></p>  
+        </article>
+    </div>
+</div> -->
 
 <div class="row marketing">
     <div class="col-lg-6">

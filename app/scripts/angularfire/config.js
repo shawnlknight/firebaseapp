@@ -11,7 +11,7 @@ angular.module('firebaseappApp')
   .constant('loginRedirectPath', '/login')
 
   // which login service we're using
-  .constant('loginProviders', 'facebook,twitter')
+  .constant('loginProviders', 'facebook,twitter,password')
 
   // your Firebase URL goes here
   .constant('FBURL', 'https://ngfirebaseapp.firebaseio.com');

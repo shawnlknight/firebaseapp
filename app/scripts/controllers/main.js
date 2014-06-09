@@ -12,10 +12,12 @@ angular.module('firebaseappApp')
 	$scope.myMarkers = [
 		{
 			"latitude": 32.796518,
-			"longitude": -79.944385
+			"longitude": -79.944385,
+
 		}
 	];
 	$scope.markers = $scope.myMarkers;
+
   });
 
 

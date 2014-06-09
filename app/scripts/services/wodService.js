@@ -21,16 +21,36 @@ angular.module('firebaseappApp')
 				ref.update(wod);
 			};
 
-			var randomWod = function(id) {
-				$("#randomButton").on("click", wodItems);
-				var randomizer = _.random(0, wod.length);
-				var workout = wod[randomizer];
+			var wodArray = function() {
+				syncData('wodItems').$bind($scope, 'wodItems').then(function() {
+				  var keys = $scope.wodItems.$getIndex();
+
+				  // utilizing Angular's helpers
+				  angular.forEach(keys, function(key) {
+				     push(key, $scope.wodItems[key]);
+				  });
+
+				  // or as a for loop
+				  // for(var i=0, len = keys.length; i < len; i++) {
+				  //    console.log(keys[i], $scope.wodItems[keys[i]]);
+				  // }
+				});
+			};
+
+			var randomWod = function() {
+				var randomizer = Math.floor(Math.random()*keys.length);
+				var workout = key[randomizer];
+				console.log(key);
+
+					return workout;
 			};
 
 			return {
 				getAllWods: getAllWods,
 				newWod: newWod,
-				removeWod: removeWod
+				removeWod: removeWod,
+				wodArray: wodArray,
+				randomWod: randomWod
 			}
 
 	}]);

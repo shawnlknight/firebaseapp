@@ -12,8 +12,13 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     color: #000;
     padding: 0.2em 0;
 }
+
 nav {
     background-color: #242224;
+}
+
+.nav li {
+
 }
 
 .nav li a {
@@ -27,8 +32,8 @@ nav {
 
 .nav-pills {
     background-color: #242224;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
     font-size: 18px;
     border-radius: none;
 }
@@ -38,15 +43,6 @@ nav {
     background-color: #d6d6d6;
 }
 
-/* Space out content a bit */
-body {
-    padding-top: 0;
-    background: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing {
@@ -54,7 +50,6 @@ body {
     padding-right: 15px;
 }
 
-/* Custom page header */
 .header {
     max-height: 15px;
     margin-top: 0;
@@ -64,17 +59,8 @@ body {
     width: 100%;
     position: fixed;
     z-index: 1;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
 }
 
-/* Custom page footer */
 .footer {
     background: #242224;
     width: 100%;
@@ -103,12 +89,38 @@ body {
 }
 
 /* Main marketing message and sign up button */
+// .jumbotron {
+//     color: #fff;
+//     background-color: #242224;
+//     text-align: center;
+//     border-bottom: 1px solid #e5e5e5;
+//     min-height: 250px;
+//     .btn {
+//         font-size: 20px;
+//         padding: 14px 14px;
+//         background-color: #d6d6d6;
+//     }
+//     .btn:hover {
+//         background-color: #12ad04;
+//     }
+// }
+
 .jumbotron {
+    background: url(http://redstickcrossfit.com/wp-content/uploads/2013/03/box-HDR-2-22-940x419.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pageTitle {
+    margin: 10% auto;
+    min-height: 200px;
+    max-width: 500px;
+    border-radius: 5px;
     color: #fff;
     background-color: #242224;
+    opacity: 0.9;
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    min-height: 250px;
     .btn {
         font-size: 20px;
         padding: 14px 14px;
@@ -117,6 +129,13 @@ body {
     .btn:hover {
         background-color: #12ad04;
     }
+
+}
+
+.titleName {
+    color: #12ad04;
+    padding-top: 5%;
+    padding-bottom: 10px;
 }
 
 /* Supporting marketing content */
@@ -129,41 +148,11 @@ body {
     }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        
-        // border: 1px solid #e5e5e5;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
-
 .myBox {
+    float: right;
     color: #12ad04;
     padding-right: 100px;
     margin-left: 50px;
-}
-
-.titleName {
-    color: #12ad04;
-    padding-top: 3%;
-    padding-bottom: 10px;
 }
 
 .form-control {
@@ -184,6 +173,10 @@ article {
     padding-top: 15px;
     padding-bottom: 20px;
     border-bottom: 1px solid #aaa;
+}
+
+.col-lg-6 {
+    margin: 0 auto;
 }
 
 .wodDescription {
@@ -243,11 +236,65 @@ textarea.form-control {
     width: 800px;
 }
 
+.form-control {
+    width: 400px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+}
+
 .flex-container {
 display: -webkit-flex;
 -webkit-flex-direction: row;
 -webkit-justify-content: space-between;
 -webkit-flex-wrap: wrap;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        
+        // border: 1px solid #e5e5e5;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+/* Responsive: Portrait mobile */
+@media screen and (max-width: 960px) {
+    .pageTitle {
+        margin-top: 18%;
+    }
+    .myBox {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .nav-pills {
+        font-size: 16px;
+    }
+    .nav > li {
+        float: left;
+        position: relative;
+        display: block;
+        vertical-align: middle;
+    }
 }
 
 

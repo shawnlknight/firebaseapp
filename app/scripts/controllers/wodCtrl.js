@@ -5,21 +5,22 @@ angular.module('firebaseappApp')
     $scope.wods = WodService.getAllWods();
 
     $scope.addWod = function() {
-    	WodService.newWod($scope.newWod);
-    	$location.path('/library');
+        WodService.newWod($scope.newWod);
+        $location.path('/library');
     };
 
     $scope.removeWod = function(wodId) {
-    	WodService.removeWod(wodId);
+        WodService.removeWod(wodId);
     };
 
-    $scope.updateWod = function(wod) {
-        WodService.updateWod(wod);
+    $scope.updateWod = function(wodId) {
+        WodService.updateWod(wodId);
         $location.path('/updateWod');
     };
 
-    $scope.randomWod = function(wodId) {
-        WodService.randomWod(wodId);
+    $scope.randomWod = function() {
+        $scope.chosenWod = WodService.randomWod();
+
     };
   
   }]);

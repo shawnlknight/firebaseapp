@@ -1,3 +1,6 @@
+
+
+
 <!-- wait for auth to resolve (avoid flashing login page before redirect -->
 <div ng-cloak class="row">
     <div class="col-md-12">
@@ -12,6 +15,13 @@
                 <button class="btn btn-lg btn-primary" ng-click="login('facebook')">Facebook</button>
                 <button class="btn btn-lg btn-primary" ng-click="login('twitter')">Twitter</button>
             </p>
+            <div class="form-signin">
+                <h2 class="form-signin-heading" ng-if="currentUser">{{currentUser.email}}</h2>
+                <input ng-model="newUser.email" type="email" class="form-control" placeholder="email">
+                <input ng-model="newUser.password" type="password" class="form-control" placeholder="password">
+                <button ng-click="login(newUser.email, newUser.password)" class="btn btn-sm btn-default">Login</button>
+                <button ng-click="register(newUser.email, newUser.password)" class="btn btn-sm btn-default">Register</button>
+            </div>
         </fieldset>
 
         

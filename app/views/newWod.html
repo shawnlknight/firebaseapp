@@ -1,6 +1,6 @@
 <div class="header">
   <ul class="nav nav-pills pull-left">
-    <li><h1 class="myBox">My Box</h1></li>
+    <h1 class="myBox">My Box</h1>
     <li><a ng-href="#">Home</a></li>
     <li><a ng-href="#/library">WOD Library</a></li>
     <li><a ng-href="#/map">Box Locator</a></li>
@@ -9,10 +9,25 @@
   </ul>
 </div>
 <div class="jumbotron">
-    <div>
+    <div class="pageTitle">
         <h2 class="titleName">Add New WOD below</h2>            
     </div>
 </div>
+
+<!-- <div class="row marketing" id="newWodForm" class="flex-container">
+    <form class="form-inline" role="form" novalidate ng-submit="addItem()">
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="addItem.title" placeholder="WOD Title">
+        </div>
+        <br>
+        <div class="form-group">
+            <textarea class="form-control" ng-model="addItem.content" id="wodTextArea" placeholder="WOD Description">
+            </textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-default">Add WOD</button>
+    </form> 
+</div> -->
 
 <div class="row marketing" id="newWodForm" class="flex-container">
     <form class="form-inline" role="form" novalidate ng-submit="addWod()">
