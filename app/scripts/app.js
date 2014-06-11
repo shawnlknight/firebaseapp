@@ -1,7 +1,6 @@
 'use strict';
 
-angular
-  .module('firebaseappApp', [
+var app = angular.module('firebaseappApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
@@ -11,11 +10,19 @@ angular
     'angularfire.login',
     'simpleLoginTools',
     'google-maps'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+app.constant('FBURL', 'https://ngfirebaseapp.firebaseio.com');
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
+        controller: 'WodCtrl'
+      })
+      .when('/random', {
+        authRequired: true,
+        templateUrl: 'views/random.html',
         controller: 'WodCtrl'
       })
       .when('/library', {
@@ -24,10 +31,12 @@ angular
         controller: 'WodCtrl'
       })
       .when('/newWod', {
+        authRequired: true,
         templateUrl: 'views/newWod.html',
         controller: 'WodCtrl'
       })
       .when('/updateWod', {
+        authRequired: true,
         templateUrl: 'views/updateWod.html',
         controller: 'WodCtrl'
       })
@@ -36,7 +45,6 @@ angular
         controller: 'MainCtrl'
       })
       .when('/login', {
-        authRequired: false, // if true, must log in before viewing this page
         templateUrl: 'views/login.html',
         controller: 'LoginController'
       })

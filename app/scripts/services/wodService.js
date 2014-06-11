@@ -38,7 +38,14 @@ angular.module('firebaseappApp')
 			};
 
 			var randomWod = function() {
-				var randomizer = Math.floor(Math.random()*keys.length);
+				var i = 0;
+				var rand = Math.floor(Math.random() * wodItems());
+				wodItems.forEach(function(wodItems) {
+				  if (i == rand) {
+				    // picked random item, snapshot.val().
+				  }
+				  i++;
+				});
 				var workout = key[randomizer];
 				console.log(key);
 

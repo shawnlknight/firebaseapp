@@ -1,6 +1,6 @@
   // This is an attempt to relate data to current user logged in
 
-
+// $rootScope.currentUser = UsersService.getCurrentUser;
 
 'use strict';
 

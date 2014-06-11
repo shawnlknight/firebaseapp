@@ -88,23 +88,6 @@ nav {
 
 }
 
-/* Main marketing message and sign up button */
-// .jumbotron {
-//     color: #fff;
-//     background-color: #242224;
-//     text-align: center;
-//     border-bottom: 1px solid #e5e5e5;
-//     min-height: 250px;
-//     .btn {
-//         font-size: 20px;
-//         padding: 14px 14px;
-//         background-color: #d6d6d6;
-//     }
-//     .btn:hover {
-//         background-color: #12ad04;
-//     }
-// }
-
 .jumbotron {
     background: url(http://redstickcrossfit.com/wp-content/uploads/2013/03/box-HDR-2-22-940x419.jpg);
     background-repeat: no-repeat;
@@ -220,8 +203,8 @@ textarea.form-control {
     color: #d6d6d6;
 }
 
-#newWodForm {
-    padding-left: 24%;
+#wodForm {
+    padding-left: 30%;
     .btn:hover {
         background-color: #12ad04;
     }
@@ -229,6 +212,10 @@ textarea.form-control {
 
 #wodTextArea {
     width: 400px;
+}
+
+.boxMap {
+    padding-left: 25%;
 }
 
 .angular-google-map-container { 
@@ -244,12 +231,12 @@ textarea.form-control {
         display: none !important;
 }
 
-.flex-container {
-display: -webkit-flex;
--webkit-flex-direction: row;
--webkit-justify-content: space-between;
--webkit-flex-wrap: wrap;
-}
+// .flex-container {
+// display: -webkit-flex;
+// -webkit-flex-direction: row;
+// -webkit-justify-content: space-between;
+// -webkit-flex-wrap: wrap;
+// }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -274,6 +261,10 @@ display: -webkit-flex;
     .jumbotron {
         border-bottom: 0;
     }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 600px;
+    }
 }
 
 /* Responsive: Portrait mobile */
@@ -294,6 +285,45 @@ display: -webkit-flex;
         position: relative;
         display: block;
         vertical-align: middle;
+    }
+    #wodForm {
+        padding-left: 10%;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .pageTitle {
+        margin-top: 40%;
+    }
+    #wodForm {
+        padding-left: 2%;
+    }
+    .boxMap {
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .pageTitle {
+        margin-top: 40%;
+    }
+    #wodForm {
+        padding-left: 2%;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+    .angular-google-map-container { 
+        height: 400px; 
+        width: 500px;
+    }
+    .boxMap {
+        padding-left: 2%;
     }
 }
 
